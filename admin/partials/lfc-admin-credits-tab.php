@@ -8,7 +8,7 @@
                     <div class="inside">
                         <div class="c4p-clearfix">
                             <div class="c4p-left">
-                                <img src="<?php echo LFC_PATH . 'admin/images/foxe.png'; ?>" class="c4p-author-image" />
+                                <img src="<?php echo LFC_PATH . '/admin/images/foxe.png'; ?>" class="c4p-author-image" />
                             </div>
                             <div class="c4p-left" style="width: 70%">
                                 <?php $uname = ( $current_user->user_firstname == '' ) ? $current_user->user_login : $current_user->user_firstname; ?>
@@ -52,14 +52,6 @@
                         </div>
                         <div class="misc-pub-section">
                             <label><?php _e('Author', 'lazy-facebook-comments'); ?> : <a href="https://thefoxe.com/" class="i4t3-author-link" target="_blank" title="<?php _e('Visit author website', 'lazy-facebook-comments'); ?>">The Foxe</a></label>
-                            <span></span>
-                        </div>
-                        <div class="misc-pub-section">
-                            <label><a href="https://thefoxe.com/docs/docs/category/lazy-facebook-comments/" class="i4t3-author-link" target="_blank" title="<?php _e('Visit plugin website', 'lazy-facebook-comments'); ?>"><strong><?php _e('Plugin documentation', 'lazy-facebook-comments'); ?></strong></a></label>
-                            <span></span>
-                        </div>
-                        <div class="misc-pub-section">
-                            <label><a href="https://thefoxe.com/products/lazy-facebook-comments/" class="i4t3-author-link" target="_blank" title="<?php _e('Visit plugin website', 'lazy-facebook-comments'); ?>"><strong><?php _e('More details about the plugin', 'lazy-facebook-comments'); ?></strong></a></label>
                             <span></span>
                         </div>
                         <div class="misc-pub-section">

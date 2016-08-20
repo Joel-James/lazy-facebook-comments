@@ -1,259 +1,135 @@
-=== 404 to 301 ===
+=== Lazy Facebook Comments ===
 Contributors: joelcj91,foxe
-Tags: 404, 301, 302, 307, not found, 404 redirect, 404 to 301, 301 redirect, seo redirect, error redirect, 404 seo, custom 404 page
-Donate link: https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XUVWY8HUBUXY4
+Tags: facebook comments, lazy laod, lazy comments, lazy fb comment, fb comments, facebook lazy comments, lazy load fb
+Donate link: https://www.paypal.me/JoelCJ
 Requires at least: 3.0
-Tested up to: 4.5
-Stable tag: 2.1.6
+Tested up to: 4.6
+Stable tag: 2.0.0
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
-Automatically redirect, log and notify all 404 page errors to any page using 301 redirect for SEO. No more 404 Errors in WebMaster tool.
+Facebook Comments for WordPress with lazy loading feature. Load FB comments after button click or scroll down.
 
 == Description ==
 
-If you care about your website, you should take steps to avoid 404 errors as it affects your SEO badly. 404 ( Page not found ) errors are common and we all hate it, even Search engines do the same! Install this plugin then sit back and relax. It will take care of 404 errors!
+Use Facebook comments system in your website without slowing down your website. This plugin add an extra feature to lazy load Facebook comments after clicking a button or scrolling down.
 
-= What is 404 to 301? =
-
-*Handling 404 errors in your site should be easy. With this plugin, it finally is.*
-
-404 to 301 is a simple but amazing plugin which handles all 404 errors for you. It will redirect all 404 errors to any page that you set, using 301 (or any other) status. That means no more 404 errors! Even in Google webmaster tool you are safe!
-You will not see any 404 error reports in your webmaster tool dashboard.
+Simple plugin to add Facebook Comments to your website easily. It works perfectly with latest version of WordPress.
 
 
-> #### 404 to 301 - Features
+> #### Lazy Facebook Comments - Features
 >
-> - You can redirect errors to any existing page or custom link.<br />
-> - No more 404 errors in your website. Seriously!<br />
+> - Add most popular Facebook commenting system in your website.<br />
+> - **Lazy Load Facebook scripts and comments only after clicking a button or scrolling down.**<br />
 > - **Translation ready!**<br />
-> - You can optionally monitor/log all errors.<br />
-> - Exclude paths from errors.<br />
-> - You can optionally enable email notification on all 404 errors.<br />
-> - You can choose which redirect method to be used (301,302,307).<br />
-> - Will not irritate your visitors if they land on a non-existing page/url.<br />
-> - Super Light weight.<br />
-> - Increase your SEO by telling Google that all 404 pages are moved to some other page.<br />
+> - Adjust number of comments, color scheme, language, width, sorting order etc..<br />
+> - Facebook comments increases your audience.<br />
+> - Customize button label.<br />
+> - **Super Light weight.**<br />
 > - Completely free to use with lifetime updates.<br />
-> - Developer friendly.<br />
+> - **Developer friendly.**<br />
 > - Follows best WordPress coding standards.<br />
-> - Of course, available in [GitHub](https://github.com/joel-james/404-to-301)<br />
+> - Of course, available in [GitHub](https://github.com/joel-james/lazy-facebook-comments/)<br />
 >
-> [Installation](https://wordpress.org/plugins/404-to-301/installation/) | [Docs](https://thefoxe.com/docs/docs/category/404-to-301/) | [Screenshots](https://wordpress.org/plugins/404-to-301/screenshots/)
+> [Installation](https://wordpress.org/plugins/lazy-facebook-comments/installation/) | [Screenshots](https://wordpress.org/plugins/lazy-facebook-comments/screenshots/)
 
 
 **Bug Reports**
 
-Bug reports for 404 to 301 are always welcome. [Report here](https://thefoxe.com/bug-report/).
+Bug reports are always welcome. [Report here](https://thefoxe.com/bug-report/).
 
 **More information**
 
-- [404 to 301 - Plugin Homepage](https://thefoxe.com/products/lazy-facebook-comments), containing more details and docs.
 - Follow the developer [@Twitter](https://twitter.com/Joel_James)
 - Other [WordPress plugins](https://profiles.wordpress.org/joelcj91/#content-plugins) by Joel James for [The Foxe](https://thefoxe.com)
 
-**404 Errors and Redirect - More Details**
+**Other Requirements**
 
-If you are confused with these terms 404,301, redirect etc, [refer this page](https://moz.com/learn/seo/redirection/) to know more about the redirect and SEO.
+You need to create an APP in your Facebook developer console, and get the APP ID from [here](https://developers.facebook.com/apps/).
 
 
 == Installation ==
 
 
 = Installing the plugin - Simple =
-1. In your WordPress admin panel, go to *Plugins > New Plugin*, search for **404 to 301** and click "*Install now*"
-2. Alternatively, download the plugin and upload the contents of `404-to-301.zip` to your plugins directory, which usually is `/wp-content/plugins/`.
+1. In your WordPress admin panel, go to *Plugins > New Plugin*, search for **Lazy Facebook Comments** and click "*Install now*"
+2. Alternatively, download the plugin and upload the contents of `lazy-facebook-comments.zip` to your plugins directory, which usually is `/wp-content/plugins/`.
 3. Activate the plugin
-4. Go to 404 to 301 tab on your admin menus.
-5. Configure the plugin options with available settings.
+4. Go to Lazy FB Comments sub settings page under WordPress Settings page.
+5. Give your facebook app ID.
+6. Configure the plugin options with available settings.
+
+OR, See detailed doc, [how to install a WordPress plugin](https://codex.wordpress.org/Managing_Plugins#Installing_Plugins).
 
 
 = Need more help? =
-Please take a look at the [plugin documentation](https://thefoxe.com/docs/docs/category/404-to-301/) or [open a support request](http://wordpress.org/support/plugin/404-to-301/).
+Please [open a support request](http://wordpress.org/support/plugin/lazy-facebook-comments/).
 
 = Missing something? =
 If you would like to have an additional feature for this plugin, [let me know](http://thefoxe.com/support/)
 
 == Frequently Asked Questions ==
 
-= What is the use of 404 to 301? =
+= Why this plugin? =
 
-It will increase your SEO by redirecting all 404 errors using SEO redirects.
+Normal Facebook comments plugins will drag your website speed down. This plugin won't.
 
-= Can I monitor 404 errors? =
+= Wait, how? =
 
-Yes. You can. If you enable logs from settings, it will list all the errors.
+By lazy loading FB scripts and comments only when needed.
 
-= How can I clear logs? =
+= Please explain, how this plugin lazy loads? =
 
-Select 'clear logs' from bulk actions and submit. It will delete all log data from your db.
-
-= Can I get email notifications? =
-
-Yes. You can enable email notifications on each 404 errors (optional).
-
-= I need more details =
-
-Please take a look at the [plugin documentation](https://thefoxe.com/docs/docs/category/404-to-301/) or [open a support request](http://wordpress.org/support/plugin/404-to-301/).
+Comments and scripts will be loaded only after user clicking on a "Load Comments" (of course you can customize this button text too) button, or after scrolling down. You select any of these lazy load methods.
 
 
 == Other Notes ==
 
 = Bug Reports =
 
-Bug reports for 404 to 301 are always welcome. [Report here](https://thefoxe.com/bug-report/).
+Bug reports are always welcome. [Report here](https://thefoxe.com/bug-report/).
 
 
 == Screenshots ==
 
-1. **Settings** - Settings page of 404 to 301.
-2. **Error Logs** - Logged 404 Errors.
+1. **Settings** - Settings page.
+2. **Lazy Load Button** - (If you set scroll method, no button will be added).
+3. **Facebook Comments** - Sample of comments box.
 
 
 == Changelog ==
 
-= 2.1.6 (06/04/2016) =
-**Improvements**
-
-- Fixed broken plugin website links.
-- Tested with WordPress 4.5.
-
-= 2.1.5 (22/03/2016) =
-**Improvements**
-
-- Fixed issues with deprecated functions - Thanks to [Pedro Mendonças](https://github.com/pedro-mendonca).
-- Translated missing strings.
-- Tested with WordPress 4.4.2.
-
-= 2.1.4 (22/01/2016) =
-**Bug Fixes**
-
-- Fixed issues when clearing logs (header already sent..).
-- Tested with WordPress 4.4.1.
-
-= 2.1.3 (20/12/2015) =
-**Bug Fixes**
-
-- Fixed issues with older version of WordPress.
-- Fixed issues with older version of PHP.
-
-= 2.1.0 (20/12/2015) =
+= 2.0.0 (21/08/2016) =
 **New Feature**
 
-- New option to set items per page from error log listing page.
-- New option to show or hide items from listing table (Screen option).
+- On Scroll lazy load method.
+- Ability to work with other FB plugins.
 
 **Improvements**
 
-- Improved error listing page table structure.
+- Complete revamp of plugin code.
+- Tested with WordPress 4.6.
+- Improved performance.
 
-**Bug Fixes**
-
-- Fixed issue - Null value issue when no Referrer or User Agent found.
-- Fixed issue - Clearing errors and redirecting.
-
-= 2.0.9 (2/11/2015) =
-**Bug Fixes**
-
-- Fixed issue - Empty needle issue after 2.0.8 update.
-
-= 2.0.8 (28/10/2015) =
-**New Feature**
-
-- New option to exclude paths from error logs and redirect - [See details](https://thefoxe.com/docs/items/excluding-paths-from-error-logs-and-redirects/).
-
-**Bug Fixes**
-
-- Fixed issue - Email notifications are being sent even after disabling it.
-- Fixed issue - Settings reset after reactivation of plugin.
-
-= 2.0.7 (25/09/2015) =
-**New Feature**
-
-- New option to change error notification email address.
-- Now **100% Translation ready**.
-
-**Improvements**
-
-- Minor code improvements.
-
-= 2.0.6 (13/09/2015) =
-**Improvements**
-
-- Introduced new website for the plugin.
-- Fixed few dead link issues
-
-= 2.0.5 (03/09/2015) =
-**Improvements**
-
-- Added option to avoid search engine crawlers/bots from logging errors.
-
-**Bug Fixes**
-
-- Fixed error log per page issue.
-
-= 2.0.4 (26/08/2015) =
-
-**Bug Fixes**
-
-- Fixed an issue where error log table is not being created.
-
-= 2.0.3 (21/08/2015) =
-
-**Bug Fixes**
-
-- Fixed a serious issue which may cause SQL injection attack.
-
-= 2.0.2 (16/08/2015) =
-**Bug Fixes**
-
-- Fixed an issue with https redirect.
-- Fixed an issue with url preg_match.
-
-= 2.0.1 (29/07/2015) =
-**New Feature**
-
-- Now you can log/monitor all 404 errors (optional).
-- You can get email notifications on 404 errors (optional).
-- You can select existing pages from dropdown to set as redirect page.
-- New plugin home page.
-
-**Improvements**
-
-- Upgraded to WordPress plugin coding standard.
-- Documented all functions.
-
-= 1.0.8 =
-* Very minor bug fix
-* Tested for WP 4.2
-
-= 1.0.7 =
-* Fixed options saving issue in admin page.
-* Improved performance.
-
-= 1.0.6 =
-* Tested with latest version.
-* Improved structure.
-
-= 1.0.5 =
-* Bug fix.
-* Fixed permission issue on redirect link on plugin activation.
-
-= 1.0.4 =
-* Bug fix.
-* Fixed permission issue on activating along with some security plugins like WordFence.
-
-= 1.0.3 =
-* Added official support forum.
+= 1.0.2 =
+* Bug fix
 
 = 1.0.1 =
-* Added official website details.
+* Added official support forum
 
 = 1.0.0 =
-* Added first version with basic options.
+* Added first version
 
 == Upgrade Notice ==
 
-= 2.1.6 (06/04/2016) =
-- Fixed broken plugin website links.
-- Tested with WordPress 4.5.
+= 2.0.0 (21/08/2016) =
+**New Feature**
+
+- On Scroll lazy load method.
+- Ability to work with other FB plugins.
+
+**Improvements**
+
+- Complete revamp of plugin code.
+- Tested with WordPress 4.6.
+- Improved performance.

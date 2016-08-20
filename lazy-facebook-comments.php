@@ -2,7 +2,7 @@
 
 /**
  * Plugin Name:     Lazy Facebook Comments
- * Plugin URI:      https://thefoxe.com/products/lazy-facebook-comments/
+ * Plugin URI:      https://thefoxe.com/products/
  * Description:     Light weight Facebook comments with lazy load facility. It loads comments after user clicking on a button or scrolling down. It saves page load time.
  * Version:         2.0.0
  * Author:          Joel James
@@ -41,7 +41,7 @@ if (!class_exists('Lazy_Facebook_Comments')) {
 
     // Constants array
     $constants = array(
-        'LFC_PATH' => plugins_url('/lazy-facebook-comments/'),
+        'LFC_PATH' => plugins_url('', __FILE__),
         'LFC_PLUGIN_DIR' => dirname(__FILE__),
         'LFC_SETTINGS_PAGE' => admin_url('admin.php?page=lfc-settings'),
         'LFC_VERSION' => '2.0.0',
