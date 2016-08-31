@@ -176,6 +176,7 @@ class Lazy_Facebook_Comments {
         
         $this->loader->add_filter('comments_template', $plugin_public, 'lfc_template');
         $this->loader->add_action('wp_footer', $plugin_public, 'comments_script', 100);
+        $this->loader->add_action('pre_comment_on_post', $plugin_public, 'lfc_comment_post');
     }
 
     /**

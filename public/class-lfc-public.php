@@ -274,4 +274,20 @@ class LFC_Public {
         
         return $html;
     }
+
+    /**
+     * Disable internal Wordpress commenting if Lazy Facebook Comments.
+     * This prevents spam bots from commenting using POST
+     * requests to /wp-comments-post.php.
+     *
+     * @param int $comment_post_ID
+     *
+     * @return int
+     */
+    public function lfc_comment_post($comment_post_ID) {
+
+        die('Sorry, the built-in commenting system is disabled because Lazy Facebook Comments is active.');
+
+        return $comment_post_ID;
+    }
 }
