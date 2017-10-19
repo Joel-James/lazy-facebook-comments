@@ -1,9 +1,7 @@
 <?php
 
-// If this file is called directly, abort.
-if (!defined('WPINC')) {
-    die('Damn it.! Dude you are looking for what?');
-}
+// Abort is called directly. Alla pinne!
+defined( 'WPINC' ) or die( 'Damn it.! Dude you are looking for what?' );
 
 /**
  * Register all actions and filters for the plugin.
