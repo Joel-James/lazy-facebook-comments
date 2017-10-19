@@ -13,10 +13,7 @@
  * @link       https://thefoxe.com/products/lazy-facebook-comments/
  */
 // If uninstall not called from WordPress, then exit. That's it!
-
-if (!defined('WP_UNINSTALL_PLUGIN')) {
-    exit;
-}
+defined( 'WPINC' ) or die( 'Damn it.! Dude you are looking for what?' );
 
 // Delete plugin options
 if (get_option('lfc_options')) {

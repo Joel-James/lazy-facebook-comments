@@ -1,8 +1,7 @@
 <?php
 
-if (!defined('WPINC')) {
-    die('Damn it.! Dude you are looking for what?');
-}
+// Abort is called directly. Alla pinne!
+defined( 'WPINC' ) or die( 'Damn it.! Dude you are looking for what?' );
 
 /**
  * Fired during plugin activation.
