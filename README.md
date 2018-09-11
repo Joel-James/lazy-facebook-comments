@@ -13,7 +13,7 @@ Plugin to lazy load Facebook comments after clicking a button. A simple comment 
 To add custom post support use `lfc_supported_post_types` filter.
 
 ```
-add_filter( 'lfc_supported_post_types', 'mycustom_add_lfc_cpt_support', 5 );
+add_filter( 'lfc_supported_post_types', 'mycustom_add_lfc_cpt_support' );
 
 function mycustom_add_lfc_cpt_support( $post_types ) {
     // Here mycpt is your custom post type name.
