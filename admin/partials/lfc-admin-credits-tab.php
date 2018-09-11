@@ -8,19 +8,19 @@
                     <div class="inside">
                         <div class="c4p-clearfix">
                             <div class="c4p-left">
-                                <img src="<?php echo LFC_PATH . '/admin/images/foxe.png'; ?>" class="c4p-author-image" />
+                                <img src="<?php echo LFC_PATH . '/admin/images/Duck-Dev.jpg'; ?>" class="c4p-author-image" />
                             </div>
                             <div class="c4p-left" style="width: 70%">
                                 <?php $uname = ( $current_user->user_firstname == '' ) ? $current_user->user_login : $current_user->user_firstname; ?>
                                 <p><?php printf(__('Yo %s!', 'lazy-facebook-comments'), '<strong>' . $uname . '</strong>'); ?> <?php _e('Thank you for using Lazy Facebook Comments', 'lazy-facebook-comments'); ?></p>
                                 <p>
-                                    <?php _e('This plugin is brought to you by', 'lazy-facebook-comments'); ?> <a href="https://thefoxe.com/" class="i4t3-author-link" target="_blank" title="<?php _e('Visit author website', 'lazy-facebook-comments'); ?>"><strong>The Foxe</strong></a>, <?php _e('a personal website managed by Joel James.', 'lazy-facebook-comments'); ?>
+                                    <?php _e('This plugin is brought to you by', 'lazy-facebook-comments'); ?> <a href="https://duckdev.com/" class="i4t3-author-link" target="_blank" title="<?php _e('Visit author website', 'lazy-facebook-comments'); ?>"><strong>Duck Dev</strong></a>, <?php _e('a personal website managed by Joel James.', 'lazy-facebook-comments'); ?>
                                 </p>
                                 <p>
                                 <hr/>
                                 </p>
                                 <p>
-                                    <?php _e('So you installed this plugin and how is it doing? Feel free to', 'lazy-facebook-comments'); ?> <a href="https://thefoxe.com/contact/" class="i4t3-author-link" target="_blank" title="<?php _e('Contact the developer', 'lazy-facebook-comments'); ?>"><?php _e('get in touch with me', 'lazy-facebook-comments'); ?></a> <?php _e('anytime for help. I am always happy to help.', 'lazy-facebook-comments'); ?>
+                                    <?php _e('So you installed this plugin and how is it doing? Feel free to', 'lazy-facebook-comments'); ?> <a href="https://duckdev.com/contact/" class="i4t3-author-link" target="_blank" title="<?php _e('Contact the developer', 'lazy-facebook-comments'); ?>"><?php _e('get in touch with me', 'lazy-facebook-comments'); ?></a> <?php _e('anytime for help. I am always happy to help.', 'lazy-facebook-comments'); ?>
                                 </p>
                             </div>
                         </div>
@@ -44,19 +44,19 @@
                     <div class="inside">
                         <div class="misc-pub-section">
                             <label><?php _e('Name', 'lazy-facebook-comments'); ?> : </label>
-                            <span><strong><?php _e('Lazy Facebook Comments', 'lazy-facebook-comments'); ?></strong></span>
+                            <span><strong><?php _e('Lazy FB Comments', 'lazy-facebook-comments'); ?></strong></span>
                         </div>
                         <div class="misc-pub-section">
                             <label><?php _e('Version', 'lazy-facebook-comments'); ?> : v<?php echo $this->version; ?></label>
                             <span></span>
                         </div>
                         <div class="misc-pub-section">
-                            <label><?php _e('Author', 'lazy-facebook-comments'); ?> : <a href="https://thefoxe.com/" class="i4t3-author-link" target="_blank" title="<?php _e('Visit author website', 'lazy-facebook-comments'); ?>">The Foxe</a></label>
+                            <label><?php _e('Author', 'lazy-facebook-comments'); ?> : <a href="https://duckdev.com/" class="i4t3-author-link" target="_blank" title="<?php _e('Visit author website', 'lazy-facebook-comments'); ?>">Duck Dev</a></label>
                             <span></span>
                         </div>
                         <div class="misc-pub-section">
                             <label><?php _e('Need help?', 'lazy-facebook-comments'); ?></label>
-                            <span><strong><a href="https://thefoxe.com/contact/"><?php _e('contact support', 'lazy-facebook-comments'); ?></a></strong></span>
+                            <span><strong><a href="https://duckdev.com/contact/"><?php _e('contact support', 'lazy-facebook-comments'); ?></a></strong></span>
                         </div>
                     </div>
                 </div>

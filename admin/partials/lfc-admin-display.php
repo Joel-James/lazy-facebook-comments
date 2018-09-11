@@ -10,9 +10,9 @@ if ( ! defined( 'WPINC' ) ) {
  * @category   Core
  * @package    LFC
  * @subpackage Admin View
- * @author     Joel James <j@thefoxe.com>
+ * @author     Joel James <me@joelsays.com>
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @link       https://thefoxe.com/products/lazy-facebook-comments/
+ * @link       https://github.com/Joel-James/lazy-facebook-comments/
  */
 ?>
 
@@ -25,7 +25,7 @@ ${$active_tab .'_class'} = 'nav-tab-active';
 ?>
 
 <div class="wrap">
-    <h2><?php _e( 'Lazy Facebook Comments', 'lazy-facebook-comments' ); ?> | <?php _e( 'Settings', 'lazy-facebook-comments' ); ?></h2><br>
+    <h2><?php _e( 'Lazy FB Comments', 'lazy-facebook-comments' ); ?> | <?php _e( 'Settings', 'lazy-facebook-comments' ); ?></h2><br>
     <h2 class="nav-tab-wrapper">
         <a href="?page=lfc-settings&tab=general" class="nav-tab <?php echo $general_class; ?>"><?php _e( 'Settings', 'lazy-facebook-comments' ); ?></a>
         <a href="?page=lfc-settings&tab=credits" class="nav-tab <?php echo $credits_class ?>"><?php _e( 'Help & Info', 'lazy-facebook-comments' ); ?></a>

@@ -1,10 +1,10 @@
-=== Lazy Facebook Comments ===
-Contributors: joelcj91,duckdev
+=== Lazy FB Comments ===
+Contributors: joelcj91,foxe
 Tags: facebook comments, lazy laod, lazy comments, lazy fb comment, fb comments, facebook lazy comments, lazy load fb
 Donate link: https://www.paypal.me/JoelCJ
 Requires at least: 3.0
-Tested up to: 4.8
-Stable tag: 2.0.1
+Tested up to: 4.9
+Stable tag: 2.0.3
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -17,7 +17,7 @@ Use Facebook comments system in your website without slowing down your website. 
 Simple plugin to add Facebook Comments to your website easily. It works perfectly with latest version of WordPress.
 
 
-> #### Lazy Facebook Comments - Features
+> #### Lazy FB Comments - Features
 >
 > - Add most popular Facebook commenting system in your website.<br />
 > - **Lazy Load Facebook scripts and comments only after clicking a button or scrolling down.**<br />
@@ -36,12 +36,12 @@ Simple plugin to add Facebook Comments to your website easily. It works perfectl
 
 **Bug Reports**
 
-Bug reports are always welcome. [Report here](https://thefoxe.com/bug-report/).
+Bug reports are always welcome. [Report here](https://duckdev.com/support/).
 
 **More information**
 
 - Follow the developer [@Twitter](https://twitter.com/Joel_James)
-- Other [WordPress plugins](https://profiles.wordpress.org/joelcj91/#content-plugins) by Joel James for [The Foxe](https://thefoxe.com)
+- Other [WordPress plugins](https://profiles.wordpress.org/joelcj91/#content-plugins) by Joel James for [Duck Dev](https://duckdev.com)
 
 **Other Requirements**
 
@@ -52,7 +52,7 @@ You need to create an APP in your Facebook developer console, and get the APP ID
 
 
 = Installing the plugin - Simple =
-1. In your WordPress admin panel, go to *Plugins > New Plugin*, search for **Lazy Facebook Comments** and click "*Install now*"
+1. In your WordPress admin panel, go to *Plugins > New Plugin*, search for **Lazy FB Comments** and click "*Install now*"
 2. Alternatively, download the plugin and upload the contents of `lazy-facebook-comments.zip` to your plugins directory, which usually is `/wp-content/plugins/`.
 3. Activate the plugin
 4. Go to Lazy FB Comments sub settings page under WordPress Settings page.
@@ -66,7 +66,7 @@ OR, See detailed doc, [how to install a WordPress plugin](https://codex.wordpres
 Please [open a support request](http://wordpress.org/support/plugin/lazy-facebook-comments/).
 
 = Missing something? =
-If you would like to have an additional feature for this plugin, [let me know](http://thefoxe.com/support/)
+If you would like to have an additional feature for this plugin, [let me know](http://duckdev.com/support/)
 
 == Frequently Asked Questions ==
 
@@ -87,7 +87,7 @@ Comments and scripts will be loaded only after user clicking on a "Load Comments
 
 = Bug Reports =
 
-Bug reports are always welcome. [Report here](https://thefoxe.com/bug-report/).
+Bug reports are always welcome. [Report here](https://duckdev.com/support/).
 
 
 == Screenshots ==
@@ -98,6 +98,11 @@ Bug reports are always welcome. [Report here](https://thefoxe.com/bug-report/).
 
 
 == Changelog ==
+
+= 2.0.2 (08/03/2018) =
+
+- Tested with WP 4.9
+- Plugin name change.
 
 = 2.0.1 (21/08/2016) =
 **New Feature**
@@ -122,14 +127,7 @@ Bug reports are always welcome. [Report here](https://thefoxe.com/bug-report/).
 
 == Upgrade Notice ==
 
-= 2.0.1 (21/08/2016) =
-**New Feature**
+= 2.0.2 (08/03/2018) =
 
-- On Scroll lazy load method.
-- Ability to work with other FB plugins.
-
-**Improvements**
-
-- Complete revamp of plugin code.
-- Tested with WordPress 4.6.
-- Improved performance.
+- Tested with WP 4.9
+- Plugin name change.

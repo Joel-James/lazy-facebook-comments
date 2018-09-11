@@ -9,30 +9,30 @@ defined( 'WPINC' ) or die( 'Damn it.! Dude you are looking for what?' );
  * @category   HTML
  * @package    LFC
  * @subpackage Public
- * @author     Joel James <j@thefoxe.com>
+ * @author     Joel James <me@joelsays.com>
  * @license    http://www.gnu.org/licenses/ GNU General Public License
- * @link       https://thefoxe.com/products/lazy-facebook-comments/
+ * @link       https://github.com/Joel-James/lazy-facebook-comments/
  */
 
 // get our plugin options from db
-$options = get_option('lfc_options');
+$options = get_option( 'lfc_options' );
 
 // comments width
-$width = !empty($options['box_width']) ? $options['box_width'] : '100%';
+$width = ! empty( $options['box_width'] ) ? $options['box_width'] : '100%';
 // comments div class
-$div_class = !empty($options['div_class']) ? $options['div_class'] : 'comments-area';
+$div_class = ! empty( $options['div_class'] ) ? $options['div_class'] : 'comments-area';
 // comments loading method
-$load_on = ($options['load_on'] == 'click') ? 'click' : 'scroll';
+$load_on = ( $options['load_on'] == 'click' ) ? 'click' : 'scroll';
 // button text
-$btn_text = !empty($options['button_text']) ? $options['button_text'] : 'Load Comments';
+$btn_text = ! empty( $options['button_text'] ) ? $options['button_text'] : 'Load Comments';
 
 // add comments area only if Application ID is given
-if (!empty($options['app_id'])) { ?>
+if ( ! empty( $options['app_id'] ) ) { ?>
 
-    <div id="lfc_comments" class="<?php echo $div_class; ?>" align="center">
-        <?php if ($load_on == 'click') { ?>
-            <button id="lfc_button" class="btn button lfc-btn" onclick="loadLFCComments();"><?php echo $btn_text; ?></button>
-        <?php } ?>
-    </div>
+	<div id="lfc_comments" class="<?php echo $div_class; ?>" align="center">
+		<?php if ( $load_on == 'click' ) { ?>
+			<button id="lfc_button" class="btn button lfc-btn" onclick="loadLFCComments();"><?php echo $btn_text; ?></button>
+		<?php } ?>
+	</div>
 
 <?php }
