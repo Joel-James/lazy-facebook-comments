@@ -82,6 +82,22 @@ By lazy loading FB scripts and comments only when needed.
 
 Comments and scripts will be loaded only after user clicking on a "Load Comments" (of course you can customize this button text too) button, or after scrolling down. You select any of these lazy load methods.
 
+= How can I add custom post type support? =
+
+It's easy. You can use `lfc_supported_post_types` filter to add custom post type support. Add following line to your theme's functions.php or in your custom plugin.
+
+
+`
+add_filter( 'lfc_supported_post_types', 'mycustom_add_lfc_cpt_support' );
+
+function mycustom_add_lfc_cpt_support( $post_types ) {
+    // Here mycpt is your custom post type name.
+    $post_types[] = 'mycpt';
+
+    return $post_types;
+}
+`
+
 
 == Other Notes ==
 
@@ -98,6 +114,11 @@ Bug reports are always welcome. [Report here](https://duckdev.com/support/).
 
 
 == Changelog ==
+
+= 2.0.3 (11/09/2018) =
+
+- 📦 New filter (lfc_supported_post_types) to add custom post support.
+- 🐛 Fixed cpt support.
 
 = 2.0.2 (08/03/2018) =
 
@@ -127,7 +148,7 @@ Bug reports are always welcome. [Report here](https://duckdev.com/support/).
 
 == Upgrade Notice ==
 
-= 2.0.2 (08/03/2018) =
+= 2.0.3 (11/09/2018) =
 
-- Tested with WP 4.9
-- Plugin name change.
+- 📦 New filter (lfc_supported_post_types) to add custom post support.
+- 🐛 Fixed cpt support.
