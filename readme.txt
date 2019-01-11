@@ -3,8 +3,8 @@ Contributors: joelcj91,duckdev
 Tags: facebook comments, lazy laod, lazy comments, lazy fb comment, fb comments, facebook lazy comments, lazy load fb
 Donate link: https://www.paypal.me/JoelCJ
 Requires at least: 3.0
-Tested up to: 4.9
-Stable tag: 2.0.3
+Tested up to: 5.0
+Stable tag: 2.0.4
 License: GPLv2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
 
@@ -97,7 +97,9 @@ function mycustom_add_lfc_cpt_support( $post_types ) {
     return $post_types;
 }
 `
+= Where can I moderate the comments? =
 
+Once you configure the plugin with APP ID, you will find the moderation page link on the plugin settings page.
 
 == Other Notes ==
 
@@ -114,6 +116,10 @@ Bug reports are always welcome. [Report here](https://duckdev.com/support/).
 
 
 == Changelog ==
+
+= 2.0.4 (11/01/2019) =
+
+- 📦 Added comment moderation link.
 
 = 2.0.3 (11/09/2018) =
 
@@ -148,7 +154,6 @@ Bug reports are always welcome. [Report here](https://duckdev.com/support/).
 
 == Upgrade Notice ==
 
-= 2.0.3 (11/09/2018) =
+= 2.0.4 (11/01/2019) =
 
-- 📦 New filter (lfc_supported_post_types) to add custom post support.
-- 🐛 Fixed cpt support.
+- 📦 Added comment moderation link.

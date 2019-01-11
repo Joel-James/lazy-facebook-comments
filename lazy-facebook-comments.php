@@ -1,13 +1,12 @@
 <?php
-
 /**
  * Plugin Name:     Lazy FB Comments
  * Plugin URI:      https://github.com/Joel-James/lazy-facebook-comments
  * Description:     Light weight Facebook comments with lazy load facility. It loads comments after user clicking on a button or scrolling down. It saves page load time.
- * Version:         2.0.3
+ * Version:         2.0.4
  * Author:          Joel James
  * Author URI:      https://duckdev.com/
- * Donate link:     https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=XUVWY8HUBUXY4
+ * Donate link:     https://www.paypal.me/JoelCJ
  * License:         GPL-2.0+
  * License URI:     http://www.gnu.org/licenses/gpl-2.0.txt
  * Text Domain:     lazy-facebook-comments
@@ -44,7 +43,7 @@ if ( ! class_exists( 'Lazy_Facebook_Comments' ) ) {
 		'LFC_PATH'             => plugins_url( '', __FILE__ ),
 		'LFC_PLUGIN_DIR'       => dirname( __FILE__ ),
 		'LFC_SETTINGS_PAGE'    => admin_url( 'admin.php?page=lfc-settings' ),
-		'LFC_VERSION'          => '2.0.3',
+		'LFC_VERSION'          => '2.0.4',
 		'LFC_ADMIN_PERMISSION' => 'manage_options'
 	);
 

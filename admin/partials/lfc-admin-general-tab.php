@@ -2,7 +2,6 @@
     <form method="post" action="options.php">
         <p>
         <?php settings_fields('lfc_options'); ?>
-        <?php $options = get_option('lfc_options'); ?>
         <table class="form-table">
             <tbody>
 
