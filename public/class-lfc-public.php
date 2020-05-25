@@ -38,7 +38,7 @@ class LFC_Public {
 	 *
 	 * @since  2.0.0
 	 * @access private
-	 * @var    string $options Get the options saved in db.
+	 * @var    string[] $options Get the options saved in db.
 	 */
 	private $options;
 
@@ -204,12 +204,14 @@ class LFC_Public {
 	 * For on click option, we don't need any script, as we
 	 * have onClick on button itself.
 	 *
-	 * @return html
+	 * @return string
 	 */
 	private function get_load_script() {
 
 		if ( $this->options['load_on'] == 'scroll' ) {
 			return $this->scroll_script();
+		} elseif ( $this->options['load_on'] == 'timer' ) {
+			return $this->timeout_script();
 		} else {
 			return $this->click_script();
 		}
@@ -221,7 +223,7 @@ class LFC_Public {
 	 * Load fb comments sdk when user scroll down
 	 * to the comments section with id "lfc_comments"
 	 *
-	 * @return html
+	 * @return string
 	 */
 	private function scroll_script() {
 
@@ -256,6 +258,33 @@ class LFC_Public {
                 ";
 
 		return $script;
+	}
+
+	/**
+	 * Timeout script
+	 *
+	 * Load fb comments sdk a certain interval after the page has loaded
+	 *
+	 * @return string
+	 */
+	private function timeout_script() {
+
+		$interval = (int)$this->options['timeout_sec'];
+
+		// if not set, default to 1 second
+		if ( $interval == 0 )
+			$interval = 1;
+
+		// convert to milliseconds
+		$interval = $interval * 1000;
+
+		return "document.addEventListener('DOMContentLoaded', function() {
+                  window.setTimeout(function() {
+                    let lfc_div = document.getElementById('lfc_comments');
+                    lfc_div.innerHTML = '{$this->comments_area_content()}';
+                    loadLFCComments();
+                  }, {$interval});
+                });\n";
 	}
 
 	/**

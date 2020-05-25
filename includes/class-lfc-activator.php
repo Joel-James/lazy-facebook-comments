@@ -39,7 +39,8 @@ class LFC_Activator {
 			'order_by'       => 'social',
 			'load_on'        => 'click',
 			'div_class'      => 'comments-area',
-			'sdk_loaded'     => 0
+			'sdk_loaded'     => 0,
+			'timeout_sec'    => 1
 		);
 
 		// If not already exist, adding values
