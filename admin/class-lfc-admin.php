@@ -76,7 +76,7 @@ class LFC_Admin {
 
 		global $pagenow;
 
-		if ( ( $pagenow == 'options-general.php' ) && ( in_array( $_GET['page'], array( 'lfc-settings' ) ) ) ) {
+		if ( isset($_GET['page']) && ( $pagenow == 'options-general.php' ) && ( in_array( $_GET['page'], array( 'lfc-settings' ) ) ) ) {
 
 			wp_enqueue_style(
 				$this->plugin_name,
@@ -166,7 +166,7 @@ class LFC_Admin {
 
 		global $pagenow;
 
-		if ( ( $pagenow == 'options-general.php' ) && ( in_array( $_GET['page'], array( 'lfc-settings' ) ) ) ) {
+		if ( isset($_GET['page']) && ( $pagenow == 'options-general.php' ) && ( in_array( $_GET['page'], array( 'lfc-settings' ) ) ) ) {
 
 			_e( 'Thank you for choosing Lazy FB Comments to improve your website', 'lazy-facebook-comments' );
 			echo ' | ';

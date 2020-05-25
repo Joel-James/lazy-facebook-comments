@@ -33,7 +33,7 @@
                             <option value="social" <?php selected( $options['order_by'], 'social' ); ?>>Social Ranking</option>
                             <option value="reverse_time" <?php selected( $options['order_by'], 'reverse_time' ); ?>>Oldest</option>
                             <option value="time" <?php selected( $options['order_by'], 'time' ); ?>>Newest</option>
-			</select>
+                        </select>
                         <p class="description"><?php _e('Comments will be sorted in this order. See more details', 'lazy-facebook-comments'); ?> <a href="https://developers.facebook.com/docs/plugins/comments#sorting" target="_blank"><?php _e('here', 'lazy-facebook-comments'); ?></a></p>
                     </td>
                 </tr>
@@ -43,7 +43,7 @@
                         <select class="select" type="select" name="lfc_options[color_scheme]" required>
                             <option value="light" <?php selected( $options['color_scheme'], 'light' ); ?>>Light</option>
                             <option value="dark" <?php selected( $options['color_scheme'], 'dark' ); ?>>Dark</option>
-			</select>
+                        </select>
                         <p class="description"><?php _e('Only these two color schemes are availble right now.', 'lazy-facebook-comments'); ?></p>
                     </td>
                 </tr>
@@ -57,11 +57,24 @@
                 <tr>
                     <th><?php _e('Load Comments', 'lazy-facebook-comments'); ?></th>
                     <td>
-                        <select class="select" type="select" name="lfc_options[load_on]">
+                        <select class="select" name="lfc_options[load_on]" onchange="document.getElementById('timeout_sec_tr').style.display = this.value === 'timer' ? '' : 'none';">
                             <option value="click" <?php selected( $options['load_on'], 'click' ); ?>>On Click</option>
                             <option value="scroll" <?php selected( $options['load_on'], 'scroll' ); ?>>On Scroll</option>
-			</select>
+                            <option value="timer" <?php selected( $options['load_on'], 'timer' ); ?>>On Timer</option>
+                        </select>
                         <p class="description"><?php _e('Comments will be lazy loaded using this method.', 'lazy-facebook-comments'); ?></p>
+                    </td>
+                </tr>
+                <tr id="timeout_sec_tr" style="<?php if ($options['load_on'] != 'timer') echo 'display: none'; ?>">
+                    <th><?php _e('Timer Interval', 'lazy-facebook-comments'); ?></th>
+                    <td>
+                        <select class="select" name="lfc_options[timeout_sec]">
+                            <option value="0.5" <?php selected( $options['timeout_sec'], '0.5' ); ?>>0.5 second</option>
+                            <option value="1" <?php selected( $options['timeout_sec'], '1' ); ?>>1 second</option>
+                            <option value="1.5" <?php selected( $options['timeout_sec'], '1.5' ); ?>>1.5 seconds</option>
+                            <option value="2" <?php selected( $options['timeout_sec'], '2' ); ?>>2 seconds</option>
+                        </select>
+                        <p class="description"><?php _e('Comments will be lazy loaded after this timer interval.', 'lazy-facebook-comments'); ?></p>
                     </td>
                 </tr>
                 <tr>
