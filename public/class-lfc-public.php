@@ -83,6 +83,11 @@ class LFC_Public {
 			return LFC_PLUGIN_DIR . '/public/lfc-closed-comments.php';
 		}
 
+		// Load AMP component for AMP page.
+		if ( function_exists( 'is_amp_endpoint' ) && is_amp_endpoint() ) {
+			return LFC_PLUGIN_DIR . '/public/lfc-amp-comments.php';
+		}
+
 		return LFC_PLUGIN_DIR . '/public/lfc-comments.php';
 	}
 
@@ -95,6 +100,10 @@ class LFC_Public {
 	 * @return void
 	 */
 	public function comments_script() {
+
+		if ( function_exists( 'is_amp_endpoint' ) && is_amp_endpoint() ) {
+			return;
+		}
 
 		global $post;
 
