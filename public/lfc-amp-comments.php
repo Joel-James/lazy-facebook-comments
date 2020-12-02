@@ -25,6 +25,8 @@ $color = ( 'dark' === $options['color_scheme'] ) ? 'dark' : 'light';
 // comments sorting.
 $order = ! empty( $options['order_by'] ) ? $options['order_by'] : 'social';
 
+$lang = ! empty( $options['comments_lang'] ) ? $options['comments_lang'] : 'en_US';
+
 $height = '394';
 
 if ( ! empty( $width ) ) {
@@ -38,7 +40,7 @@ $div_class = ! empty( $options['div_class'] ) ? $options['div_class'] : 'comment
 if ( ! empty( $options['app_id'] ) ) {
 	?>
 	<div id="lfc_comments" class="<?php echo esc_attr( $div_class ); ?>" align="center">
-			<amp-facebook-comments width="<?php echo esc_attr( $width ); ?>" height="<?php echo esc_attr( $height ); ?>" layout="responsive" data-numposts="<?php echo esc_attr( $count ); ?>" data-href="<?php echo esc_attr( get_the_permalink() ); ?>" data-colorscheme="<?php echo esc_attr( $color ); ?>" data-order-by="<?php echo esc_attr( $order ); ?>"></amp-facebook-comments>
+			<amp-facebook-comments width="<?php echo esc_attr( $width ); ?>" height="<?php echo esc_attr( $height ); ?>" layout="responsive" data-numposts="<?php echo esc_attr( $count ); ?>" data-href="<?php echo esc_attr( get_the_permalink() ); ?>" data-colorscheme="<?php echo esc_attr( $color ); ?>" data-order-by="<?php echo esc_attr( $order ); ?>" data-locale="<?php echo esc_attr( $lang ); ?>"></amp-facebook-comments>
 	</div>
 	<?php
 }
